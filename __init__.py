@@ -1,6 +1,11 @@
 """ComfyUI entry point for the ahx suite of custom nodes."""
 
-NODE_CLASS_MAPPINGS = {}
-NODE_DISPLAY_NAME_MAPPINGS = {}
+if __package__:  # ComfyUI imports this folder as a package; pytest imports the file bare
+    from .prompt_style.node import PromptStyle
 
-__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
+    # V3 nodes carry their display names in their schemas.
+    NODE_CLASS_MAPPINGS = {
+        "AHX_PromptStyle": PromptStyle,
+    }
+
+    __all__ = ["NODE_CLASS_MAPPINGS"]

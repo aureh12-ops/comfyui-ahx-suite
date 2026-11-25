@@ -1,0 +1,13 @@
+[
+  {"name": "Golden hour", "text": "golden hour sunlight, warm low sun, long soft shadows"},
+  {"name": "Blue hour", "text": "blue hour light, cool twilight tones, soft ambient glow"},
+  {"name": "Rembrandt", "text": "Rembrandt lighting, single key light, small triangle of light on the shadow side"},
+  {"name": "Rim light", "text": "strong rim light, glowing edges, dark background"},
+  {"name": "Neon", "text": "neon lighting, magenta and cyan glow, colorful reflections"},
+  {"name": "Candlelight", "text": "warm candlelight, flickering glow, deep shadows"},
+  {"name": "Overcast", "text": "soft overcast light, even diffuse illumination, no harsh shadows"},
+  {"name": "Midday sun", "text": "harsh midday sun, crisp hard shadows, high contrast"},
+  {"name": "Volumetric", "text": "volumetric light, sun rays through haze"},
+  {"name": "Backlit", "text": "backlit against the light, glowing outline, lens flare"},
+  {"name": "Studio three-point", "text": "three-point studio lighting, clean balanced light"}
+]

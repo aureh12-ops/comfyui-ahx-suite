@@ -1,0 +1,12 @@
+[
+  {"name": "Animated film", "text": "3D animated film render, soft subsurface shading, expressive stylized shapes, warm lighting"},
+  {"name": "Clay", "text": "claymation 3D render, handmade clay texture, fingerprints, stop-motion look"},
+  {"name": "Low poly", "text": "low poly 3D render, faceted geometry, flat shading, minimal palette"},
+  {"name": "Isometric diorama", "text": "isometric 3D diorama, tiny detailed scene, soft shadows, miniature feel"},
+  {"name": "Photoreal CGI", "text": "photorealistic 3D render, physically based materials, global illumination, ray-traced reflections"},
+  {"name": "Vinyl toy", "text": "vinyl toy figure 3D render, glossy plastic, studio lighting"},
+  {"name": "Voxel", "text": "voxel art 3D render, cube blocks, bright colors, soft ambient occlusion"},
+  {"name": "Game engine", "text": "real-time game engine render, detailed textures, dynamic lighting, next-gen graphics"},
+  {"name": "Glass", "text": "3D render, everything made of glass, refraction, caustics, clean studio background"},
+  {"name": "Felt plush", "text": "felt plush 3D render, soft fuzzy fabric texture, stitched seams, cozy lighting"}
+]

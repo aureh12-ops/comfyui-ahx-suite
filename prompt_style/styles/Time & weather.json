@@ -1,0 +1,14 @@
+[
+  {"name": "Sunrise", "text": "at sunrise, pink and orange sky, fresh morning light"},
+  {"name": "Sunset", "text": "at sunset, fiery orange sky, long shadows"},
+  {"name": "Night", "text": "at night, {moonlit|under a starry sky|lit by city lights}, deep blue darkness"},
+  {"name": "Rain", "text": "in the rain, {light drizzle|heavy downpour}, wet reflective surfaces"},
+  {"name": "Snow", "text": "in falling snow, {gentle snowflakes|a raging blizzard}, frosty cold air"},
+  {"name": "Fog", "text": "in thick fog, soft muted shapes, fading distance"},
+  {"name": "Storm", "text": "under a stormy sky, dark clouds, lightning in the distance"},
+  {"name": "Clear day", "text": "on a clear sunny day, blue sky, crisp light"},
+  {"name": "Spring", "text": "in spring, fresh green leaves, {cherry blossoms|wildflowers|apple blossoms}"},
+  {"name": "Summer heat", "text": "on a hot summer day, heat haze, bright light"},
+  {"name": "Autumn", "text": "in autumn, golden and red leaves"},
+  {"name": "Winter", "text": "in winter, bare trees, cold pale light"}
+]

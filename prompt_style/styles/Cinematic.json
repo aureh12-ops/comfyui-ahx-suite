@@ -1,0 +1,12 @@
+[
+  {"name": "Film still", "text": "cinematic film still, anamorphic widescreen, dramatic lighting, rich color grade"},
+  {"name": "Film noir", "text": "film noir still, high-contrast black and white, hard shadows, light through blinds"},
+  {"name": "Teal and orange", "text": "cinematic shot, teal and orange color grade, blockbuster look"},
+  {"name": "Science fiction", "text": "science fiction movie still, cool futuristic lighting, haze, sleek production design"},
+  {"name": "Western", "text": "western movie still, dusty warm light, wide desert tones, 70mm film look"},
+  {"name": "Horror", "text": "horror movie still, eerie low light, desaturated greens, unsettling atmosphere"},
+  {"name": "Romantic drama", "text": "romantic drama still, soft glow, warm pastel grade, gentle bokeh"},
+  {"name": "1970s film", "text": "1970s movie still, warm film stock, soft grain, period look"},
+  {"name": "Neon thriller", "text": "neo-noir thriller still, neon reflections, rain-slick streets, magenta and cyan"},
+  {"name": "Epic fantasy", "text": "epic fantasy film still, sweeping scale, golden light, grand atmosphere"}
+]

@@ -1,0 +1,15 @@
+[
+  {"name": "Forest", "text": "in a {misty pine forest|sunlit birch forest|dense tropical rainforest|autumn forest with falling leaves}"},
+  {"name": "City street", "text": "{on a busy city street|in a quiet cobblestone alley|on a rainy downtown avenue|in a crowded night market}"},
+  {"name": "Seaside", "text": "on a {sandy beach at the water's edge|rocky coastline with crashing waves|tropical lagoon shore}"},
+  {"name": "Mountains", "text": "in the {snowy mountains|alpine meadows|rocky highlands}, peaks in the distance"},
+  {"name": "Desert", "text": "{in a sand dune desert|in a red rock canyon|on a white salt flat}, wide open horizon"},
+  {"name": "Cozy interior", "text": "inside a {cozy wooden cabin|warm living room with a fireplace|small sunlit kitchen}"},
+  {"name": "Cafe", "text": "in a {small sidewalk cafe|busy coffee shop|quiet tea house}"},
+  {"name": "Futuristic city", "text": "in a futuristic city, {towering glass skyscrapers|flying vehicles overhead|holographic signs}"},
+  {"name": "Ancient ruins", "text": "among {overgrown temple ruins|crumbling castle walls|ancient stone columns}"},
+  {"name": "Underwater", "text": "underwater, {colorful coral reef|swaying kelp forest|deep blue ocean}, drifting light rays"},
+  {"name": "Garden", "text": "in a {blooming flower garden|japanese zen garden|overgrown greenhouse}"},
+  {"name": "Outer space", "text": "in outer space, {colorful nebula behind|a planet below|endless starfield}"},
+  {"name": "Studio backdrop", "text": "against a plain {white|gray|black|pastel} studio backdrop"}
+]

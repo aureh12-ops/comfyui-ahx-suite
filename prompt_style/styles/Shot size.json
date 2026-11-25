@@ -1,0 +1,11 @@
+[
+  {"name": "Extreme close-up", "text": "extreme close-up, tiny details filling the frame"},
+  {"name": "Close-up", "text": "close-up shot, subject filling the frame"},
+  {"name": "Medium shot", "text": "medium shot, framed from the waist up"},
+  {"name": "Cowboy shot", "text": "cowboy shot, framed from mid-thigh up"},
+  {"name": "Full body", "text": "full-body shot, head to toe in frame"},
+  {"name": "Wide shot", "text": "wide shot, small within a large environment"},
+  {"name": "Establishing shot", "text": "establishing shot, vast scene showing the whole location"},
+  {"name": "Centered symmetry", "text": "centered symmetrical composition, perfectly balanced frame"},
+  {"name": "Rule of thirds", "text": "rule of thirds composition, subject off-center, open negative space"}
+]

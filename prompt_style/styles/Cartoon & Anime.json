@@ -1,0 +1,12 @@
+[
+  {"name": "Anime", "text": "anime illustration, clean line art, cel shading, vibrant colors"},
+  {"name": "Anime film", "text": "hand-painted anime film scene, lush painted background, soft light, warm nostalgic mood"},
+  {"name": "Manga", "text": "black and white manga panel, ink lines, screentone shading, dynamic composition"},
+  {"name": "Chibi", "text": "chibi illustration, big head, small body, cute rounded shapes, pastel colors"},
+  {"name": "Classic cartoon", "text": "classic 2D cartoon, bold outlines, flat bright colors, playful exaggeration"},
+  {"name": "Comic book", "text": "comic book art, bold inks, halftone dots, dynamic action lines"},
+  {"name": "Flat vector", "text": "flat vector illustration, simple geometric shapes, limited color palette, clean edges"},
+  {"name": "1930s cartoon", "text": "1930s rubber hose cartoon, black and white, bouncy limbs, vintage animation"},
+  {"name": "Sticker", "text": "cute sticker design, thick white outline, kawaii style, simple shading"},
+  {"name": "Pixel art", "text": "pixel art, 16-bit retro game style, limited palette, crisp pixels"}
+]

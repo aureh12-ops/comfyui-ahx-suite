@@ -1,0 +1,12 @@
+[
+  {"name": "Wide-angle 24mm", "text": "shot with a 24mm wide-angle lens, expansive view, slight perspective stretch"},
+  {"name": "Natural 50mm", "text": "shot with a 50mm lens, natural perspective"},
+  {"name": "Portrait 85mm", "text": "shot with an 85mm portrait lens, shallow depth of field, creamy background blur"},
+  {"name": "Telephoto", "text": "shot with a 200mm telephoto lens, compressed background, isolated subject"},
+  {"name": "Macro", "text": "macro lens, extreme close focus, tiny textures, very shallow depth of field"},
+  {"name": "Fisheye", "text": "fisheye lens, strong barrel distortion, ultra-wide curved view"},
+  {"name": "Tilt-shift", "text": "tilt-shift lens, miniature effect, narrow band of focus"},
+  {"name": "Long exposure", "text": "long exposure, silky motion blur, light trails"},
+  {"name": "Deep focus", "text": "deep focus, everything sharp from foreground to background"},
+  {"name": "Soft focus", "text": "soft focus lens, gentle glow, dreamy halation"}
+]

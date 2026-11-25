@@ -1,0 +1,13 @@
+[
+  {"name": "Pencil sketch", "text": "pencil sketch, graphite on paper, loose hatching, visible construction lines"},
+  {"name": "Ink drawing", "text": "ink drawing, fine pen lines, cross-hatching, white paper"},
+  {"name": "Watercolor", "text": "watercolor painting, soft washes, bleeding edges, paper texture"},
+  {"name": "Oil painting", "text": "oil painting, rich impasto brushstrokes, classical composition, canvas texture"},
+  {"name": "Gouache", "text": "gouache painting, matte opaque colors, flat shapes, storybook feel"},
+  {"name": "Charcoal", "text": "charcoal drawing, smudged shadows, dramatic contrast, textured paper"},
+  {"name": "Impressionist", "text": "impressionist painting, visible dabs of color, shimmering light, open-air feel"},
+  {"name": "Colored pencil", "text": "colored pencil drawing, layered strokes, soft vibrant colors, paper grain"},
+  {"name": "Woodblock print", "text": "japanese woodblock print, flat color areas, bold outlines, textured paper"},
+  {"name": "Concept art", "text": "digital concept art, painterly brushwork, atmospheric depth, cinematic composition"},
+  {"name": "Children's book", "text": "children's book illustration, warm whimsical style, soft textures"}
+]

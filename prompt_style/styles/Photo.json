@@ -1,0 +1,12 @@
+[
+  {"name": "Natural light", "text": "photograph, soft natural window light, true-to-life colors, sharp focus"},
+  {"name": "Analog film", "text": "analog film photograph, 35mm film grain, gently faded colors, slight vignette"},
+  {"name": "Black and white", "text": "black and white photograph, rich contrast, deep blacks, fine silver grain"},
+  {"name": "Studio", "text": "studio photograph, seamless backdrop, softbox lighting, crisp detail"},
+  {"name": "Instant photo", "text": "instant photo, white instant-film frame, washed-out colors, soft flash"},
+  {"name": "Street", "text": "candid street photograph, natural moment, urban background, documentary feel"},
+  {"name": "Fashion editorial", "text": "fashion editorial photograph, bold styling, glossy magazine look, clean composition"},
+  {"name": "Product", "text": "product photograph, clean white background, soft even light, high detail"},
+  {"name": "Documentary", "text": "documentary photograph, honest available light, muted tones, photojournalism"},
+  {"name": "Disposable camera", "text": "disposable camera snapshot, direct flash, saturated colors, casual framing"}
+]

@@ -1,0 +1,109 @@
+{
+  "id": "6f3c2a1e-8b4d-4f7a-9c2e-1d5b7a9e3c41",
+  "revision": 0,
+  "last_node_id": 5,
+  "last_link_id": 4,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "AHX_PromptStyle",
+      "title": "Prompt Style: Look",
+      "pos": [50, 100],
+      "size": [400, 240],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {"name": "prompt", "type": "STRING", "links": [1]},
+        {"name": "style", "type": "STRING", "links": null}
+      ],
+      "properties": {"Node name for S&R": "AHX_PromptStyle"},
+      "widgets_values": ["a cat sitting on a windowsill", "before", "pick", "Photo / Analog film", 0, "fixed"]
+    },
+    {
+      "id": 2,
+      "type": "AHX_PromptStyle",
+      "title": "Prompt Style: Camera angle",
+      "pos": [500, 100],
+      "size": [400, 240],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {"name": "prompt", "type": "STRING", "widget": {"name": "prompt"}, "link": 1}
+      ],
+      "outputs": [
+        {"name": "prompt", "type": "STRING", "links": [2]},
+        {"name": "style", "type": "STRING", "links": null}
+      ],
+      "properties": {"Node name for S&R": "AHX_PromptStyle"},
+      "widgets_values": ["", "after", "random", "Camera angle", 0, "randomize"]
+    },
+    {
+      "id": 3,
+      "type": "AHX_PromptStyle",
+      "title": "Prompt Style: Lighting",
+      "pos": [950, 100],
+      "size": [400, 240],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {"name": "prompt", "type": "STRING", "widget": {"name": "prompt"}, "link": 2}
+      ],
+      "outputs": [
+        {"name": "prompt", "type": "STRING", "links": [3]},
+        {"name": "style", "type": "STRING", "links": null}
+      ],
+      "properties": {"Node name for S&R": "AHX_PromptStyle"},
+      "widgets_values": ["", "after", "random", "Lighting", 0, "randomize"]
+    },
+    {
+      "id": 4,
+      "type": "AHX_PromptStyle",
+      "title": "Prompt Style: Surroundings",
+      "pos": [1400, 100],
+      "size": [400, 240],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {"name": "prompt", "type": "STRING", "widget": {"name": "prompt"}, "link": 3}
+      ],
+      "outputs": [
+        {"name": "prompt", "type": "STRING", "links": [4]},
+        {"name": "style", "type": "STRING", "links": null}
+      ],
+      "properties": {"Node name for S&R": "AHX_PromptStyle"},
+      "widgets_values": ["", "after", "random", "Surroundings", 0, "randomize"]
+    },
+    {
+      "id": 5,
+      "type": "PreviewAny",
+      "pos": [1850, 100],
+      "size": [400, 300],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {"name": "source", "type": "*", "link": 4}
+      ],
+      "outputs": [
+        {"name": "STRING", "type": "STRING", "links": null}
+      ],
+      "properties": {"Node name for S&R": "PreviewAny"},
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [1, 1, 0, 2, 0, "STRING"],
+    [2, 2, 0, 3, 0, "STRING"],
+    [3, 3, 0, 4, 0, "STRING"],
+    [4, 4, 0, 5, 0, "STRING"]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {"ds": {"scale": 0.8, "offset": [0, 0]}},
+  "version": 0.4
+}

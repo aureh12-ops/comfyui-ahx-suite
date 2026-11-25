@@ -1,0 +1,15 @@
+[
+  {"name": "Eye level", "text": "eye-level shot, straight-on view"},
+  {"name": "Low angle", "text": "low-angle shot from below, looking up, towering perspective"},
+  {"name": "High angle", "text": "high-angle shot from above, looking down"},
+  {"name": "Bird's-eye", "text": "bird's-eye view, seen from directly above"},
+  {"name": "Top-down flat lay", "text": "top-down overhead view, flat lay composition"},
+  {"name": "Worm's-eye", "text": "worm's-eye view from the ground, extreme upward perspective"},
+  {"name": "Dutch angle", "text": "dutch angle, tilted camera, dynamic diagonal composition"},
+  {"name": "Over the shoulder", "text": "over-the-shoulder shot, out-of-focus shoulder in the foreground"},
+  {"name": "First-person POV", "text": "first-person point of view, seen through the viewer's eyes"},
+  {"name": "From behind", "text": "view from behind, back to the camera"},
+  {"name": "Side profile", "text": "side view in profile"},
+  {"name": "Three-quarter view", "text": "three-quarter view, turned slightly toward the camera"},
+  {"name": "Drone aerial", "text": "aerial drone shot, seen from high above, sweeping landscape below"}
+]
