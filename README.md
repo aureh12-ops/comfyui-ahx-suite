@@ -20,7 +20,7 @@ A suite of ComfyUI custom nodes. They all live in the **ahx** menu category.
 
 **Choices inside a style**: `{a|b|c}` picks one option at each run, so `in a {misty pine forest|sunlit birch forest}` gives a different forest each time.
 
-**Built-in types**: Medium (photo, CGI, hand drawing, painting, cartoon…), and its detailed looks: Photo, Cinematic, 3D render, Cartoon & Anime, Drawing & Painting. Then Lighting, View angle, Shot size, Lens & focus, Composition, Location, Time of day, Season, Era (from the first photographs to today), Weather, Color tone and Mood. Unusual mixes are allowed: try a photo medium with a watercolor look, or an era with a futuristic city.
+**Built-in types** (about 1,400 styles): Medium (photo, CGI, hand drawing, painting, cartoon…), and its detailed looks: Photo, Cinematic, 3D render, Cartoon & Anime, Drawing & Painting. Then Lighting, View angle, Shot size, Lens & focus, Composition, Location, Time of day, Season, Era (from the first photographs to today), Weather, Color tone and Mood. Unusual mixes are allowed: try a photo medium with a watercolor look, or an era with a futuristic city.
 
 #### Your style library
 
