@@ -1,0 +1,22 @@
+[
+  {"name": "1830s first experiments", "text": "1830s experimental photograph, {faint image on a pewter plate|soft paper negative print}, blurry ghostly shapes, long exposure, empty streets, chimneys, tailcoats and top hats"},
+  {"name": "1840s daguerreotype", "text": "1840s daguerreotype, mirror-like silver plate, razor-fine detail, cool gray tones, tarnished edges, stiff seated pose, dark frock coats, bonnets and shawls"},
+  {"name": "1850s ambrotype", "text": "1850s ambrotype, wet collodion image on glass, soft creamy gray tones, dark backing, swirled edges, formal pose, crinoline dresses, waistcoats, watch chains"},
+  {"name": "1860s tintype", "text": "1860s tintype, dark iron plate, {chocolate brown|cool silvery} tones, uneven collodion edges, fine scratches, stern faces, frock coats, hoop skirts, oil lamps"},
+  {"name": "1870s albumen print", "text": "1870s albumen print, warm purple-brown sepia, sharp large-format detail, faded highlights, horse-drawn carriages, gas lamps, bustle dresses, top hats, full beards"},
+  {"name": "1880s cabinet card", "text": "1880s cabinet card studio portrait, rich sepia tones, yellowed edges, painted backdrop, potted palms, carved chair, tight corsets, high collars, waxed mustaches"},
+  {"name": "1890s", "text": "1890s {box camera snapshot|soft platinum print}, warm sepia gray tones, slight vignette, puffed sleeves, boater hats, early bicycles, horse-drawn streetcars, gaslit streets"},
+  {"name": "1900s", "text": "1900s photograph, glass plate print, soft sepia gray, gentle vignette, lace high-necked blouses, wide feathered hats, flat caps, early motorcars beside horse carts"},
+  {"name": "1910s", "text": "1910s photograph, grainy brown-toned black and white, slightly soft focus, postcard print, long narrow skirts, flat caps, military uniforms, early automobiles, trams"},
+  {"name": "1920s", "text": "1920s photograph, black and white silver print, deckled edges, drop-waist dresses, cloche hats, bobbed hair, slicked-back hair, open roadsters, art deco storefronts"},
+  {"name": "1930s", "text": "1930s photograph, rich black and white, {glamorous studio lighting|gritty documentary street shot}, deep shadows, bias-cut gowns, fedoras, pinstripe suits, finger waves, rounded sedans"},
+  {"name": "1940s", "text": "1940s photograph, {high-contrast press flash black and white|early saturated color slide}, padded shoulders, victory rolls, fedoras, military uniforms, rounded cars, streetcars"},
+  {"name": "1950s", "text": "1950s photograph, {saturated early color slide|crisp black and white print}, slightly warm tones, full skirts, pompadours, crew cuts, chrome-trimmed cars with tailfins, neon-lit diners"},
+  {"name": "1960s", "text": "1960s photograph, faded color print with a warm cast, square format, white border, mod shift dresses, beehive hair, mop-top haircuts, scooters, space-age furniture"},
+  {"name": "1970s", "text": "1970s photograph, {square instant film photo|faded glossy print}, warm orange and brown cast, soft grain, light leaks, bell-bottoms, wide collars, feathered hair, wood-paneled rooms"},
+  {"name": "1980s", "text": "1980s photograph, saturated color film, direct on-camera flash, red-eye, orange date stamp, big permed hair, neon windbreakers, shoulder pads, boxy cars, cassette players"},
+  {"name": "1990s", "text": "1990s photograph, {disposable camera snapshot|35mm compact camera print}, harsh flash, slight greenish cast, film grain, oversized flannel shirts, baggy jeans, chunky sneakers, beige computers"},
+  {"name": "2000s", "text": "2000s early digital point-and-shoot photo, low resolution, harsh flash, blown-out highlights, noisy shadows, slight blue cast, low-rise jeans, trucker hats, flip phones, bulky monitors"},
+  {"name": "2010s", "text": "2010s smartphone photo, {square crop with a faded vintage filter|bright oversaturated HDR}, slight digital noise, skinny jeans, beanies, touchscreen phones, selfie sticks, exposed filament bulbs"},
+  {"name": "2020s", "text": "2020s photo, ultra sharp high resolution, clean natural color, {mirrorless camera with creamy shallow depth of field|phone computational HDR with bright even exposure}, athleisure, wireless earbuds, electric scooters, minimalist interiors"}
+]

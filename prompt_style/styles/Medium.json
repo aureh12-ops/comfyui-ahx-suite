@@ -1,0 +1,16 @@
+[
+  {"name": "Photo", "text": "photograph, realistic photo, natural detail"},
+  {"name": "Movie", "text": "movie still, cinematic widescreen frame, film lighting"},
+  {"name": "CGI", "text": "CGI, 3D render, clean digital surfaces, ray-traced lighting"},
+  {"name": "Hand drawing", "text": "hand drawing on paper, {pencil|ink|charcoal|pastel} lines, visible strokes"},
+  {"name": "Painting", "text": "painting, {oil|acrylic|watercolor|gouache} on canvas, visible brush strokes"},
+  {"name": "Cartoon", "text": "cartoon illustration, bold outlines, flat bright colors"},
+  {"name": "Anime", "text": "anime illustration, clean line art, cel shading"},
+  {"name": "Comic", "text": "comic book panel, inked outlines, halftone dots"},
+  {"name": "Digital illustration", "text": "digital illustration, smooth painted shading, crisp details"},
+  {"name": "Pixel art", "text": "pixel art, low resolution, limited color palette"},
+  {"name": "Clay", "text": "clay stop-motion, handmade sculpted figures, fingerprint texture"},
+  {"name": "Paper craft", "text": "paper craft, cut paper layers, {collage|origami|pop-up book} look"},
+  {"name": "Sculpture", "text": "sculpture, carved {marble|wood|bronze}, museum display"},
+  {"name": "Mixed media", "text": "mixed media artwork, layered paint, paper and photo fragments"}
+]

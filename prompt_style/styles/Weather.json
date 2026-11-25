@@ -1,0 +1,16 @@
+[
+  {"name": "Clear day", "text": "on a clear sunny day, blue sky, crisp light"},
+  {"name": "Summer heat", "text": "on a hot summer day, heat haze, bright light"},
+  {"name": "Overcast", "text": "under an overcast sky, flat gray clouds, soft diffused shadowless light, muted colors"},
+  {"name": "Windy", "text": "on a windy day, {hair and clothes blowing|trees bending|leaves swirling} in strong gusts, fast-moving clouds"},
+  {"name": "Fog", "text": "in thick fog, soft muted shapes, fading distance"},
+  {"name": "Mist", "text": "in a light morning mist, soft haze rising from the ground, gentle veil over the distance, damp dewy air"},
+  {"name": "Rain", "text": "in the rain, {light drizzle|heavy downpour}, wet reflective surfaces"},
+  {"name": "After the rain", "text": "after the rain, glistening wet streets, puddles reflecting the sky, {a rainbow in the distance|clouds breaking apart}, fresh clean air"},
+  {"name": "Storm", "text": "under a stormy sky, dark clouds, lightning in the distance"},
+  {"name": "Thunderstorm", "text": "in a violent thunderstorm, bright forked lightning, torrential rain, churning black clouds, dramatic flashes of light"},
+  {"name": "Hail", "text": "in a hailstorm, white hailstones bouncing on the ground, icy pellets in the air, dark gray sky"},
+  {"name": "Snow", "text": "in falling snow, {gentle snowflakes|a raging blizzard}, frosty cold air"},
+  {"name": "Frost", "text": "on a frosty morning, white frost on grass and leaves, sparkling ice crystals, cold clear air, pale sunlight"},
+  {"name": "Sandstorm", "text": "in a sandstorm, swirling dust and sand, orange hazy air, sun dimmed to a pale disc, low visibility"}
+]

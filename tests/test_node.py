@@ -4,18 +4,17 @@ import os
 import sys
 
 from prompt_style import node
-from prompt_style.library import ALL, labels, load_library
+from prompt_style.library import PROMPT, load_library
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def by_id(specs):
-    return {s.args[0]: s for s in specs}
+def inputs():
+    return {s.args[0]: s for s in node.PromptStyle.define_schema().kwargs["inputs"]}
 
 
-def mode_options():
-    mode = by_id(node.PromptStyle.define_schema().kwargs["inputs"])["mode"]
-    return {o.args[0]: by_id(o.args[1]) for o in mode.kwargs["options"]}
+def schema_library():
+    return inputs()["styles"].kwargs["extra_dict"]["library"]
 
 
 def add_style_file(name, entries):
@@ -34,28 +33,30 @@ def test_user_edits_are_kept(user_dir):
     assert load_library(node.styles_folder())["Lighting"] == {"Mine": "my light"}
 
 
-def test_schema_offers_the_library(user_dir):
+def test_schema(user_dir):
+    assert list(inputs()) == ["prompt", "seed", "styles"]
+    assert inputs()["seed"].kwargs["control_after_generate"] is True
+    assert node.StyleStack.io_type == "AHX_STYLE_STACK"
+    # The JS gets the library in file order, as [name, text] pairs.
     library = load_library(node.BUILTIN_STYLES)
-    options = mode_options()
-    assert list(options) == ["pick", "random", "cycle"]
-    assert options["pick"]["style"].kwargs["options"] == labels(library)
-    assert options["random"]["group"].kwargs["options"] == options["cycle"]["group"].kwargs["options"] == [ALL, *library]
-    # pick stays put, random changes at every run, cycle steps through the group.
-    assert options["pick"]["seed"].kwargs["control_after_generate"] == "fixed"
-    assert options["random"]["seed"].kwargs["control_after_generate"] is True
-    assert options["cycle"]["index"].kwargs["control_after_generate"] == "increment"
+    assert schema_library() == {kind: list(styles.items()) for kind, styles in library.items()}
 
 
 def test_new_style_files_show_up_without_restart(user_dir):
     add_style_file("My styles.json", [{"name": "Test", "text": "my style"}])
-    options = mode_options()
-    assert "My styles / Test" in options["pick"]["style"].kwargs["options"]
-    assert "My styles" in options["random"]["group"].kwargs["options"]
+    assert schema_library()["My styles"] == [("Test", "my style")]
 
 
 def test_execute(user_dir):
-    out = node.PromptStyle.execute("a cat", "after", {"mode": "pick", "style": "Lighting / Golden hour", "seed": 0})
-    assert out.args == ("a cat, golden hour sunlight, warm low sun, long soft shadows", "Lighting / Golden hour")
+    rows = [{"type": "Lighting", "style": "Golden hour"}, {"type": PROMPT}, {"type": "View angle", "style": "Low angle"}]
+    out = node.PromptStyle.execute("a cat", 0, rows)
+    assert out.args == (
+        "golden hour sunlight, warm low sun, long soft shadows, a cat, low-angle shot from below, looking up, towering perspective",
+        "Lighting / Golden hour, View angle / Low angle",
+    )
+    # The node shows the style texts, one per line.
+    assert out.kwargs["ui"].args == (
+        "golden hour sunlight, warm low sun, long soft shadows\nlow-angle shot from below, looking up, towering perspective",)
 
 
 def test_pack_registers_the_node(user_dir, monkeypatch):
@@ -66,3 +67,4 @@ def test_pack_registers_the_node(user_dir, monkeypatch):
     for node_id, cls in pack.NODE_CLASS_MAPPINGS.items():
         assert cls.define_schema().kwargs["node_id"] == node_id
     assert list(pack.NODE_CLASS_MAPPINGS) == ["AHX_PromptStyle"]
+    assert os.path.isdir(os.path.join(ROOT, pack.WEB_DIRECTORY))

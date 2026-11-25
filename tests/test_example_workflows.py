@@ -3,13 +3,11 @@ import os
 
 import pytest
 
-from prompt_style.library import ALL, apply_style, labels, load_library
+from prompt_style.library import apply_styles, load_library
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FOLDER = os.path.join(ROOT, "example_workflows")
 LIBRARY = load_library(os.path.join(ROOT, "prompt_style", "styles"))
-# Saved order: prompt, position, mode, then the mode's own widgets (a seed is followed by its control).
-MODE_WIDGETS = {"pick": ("style", "seed"), "random": ("group", "seed"), "cycle": ("group", "index")}
 
 
 @pytest.mark.parametrize("name", sorted(os.listdir(FOLDER)))
@@ -25,9 +23,7 @@ def test_example_workflow(name):
     for n in nodes.values():
         if n["type"] != "AHX_PromptStyle":
             continue
-        prompt, position, kind, choice, seed, control = n["widgets_values"]
-        assert position in ("before", "after")
-        mode = dict(zip(("mode", *MODE_WIDGETS[kind]), (kind, choice, seed)))
-        assert choice in (labels(LIBRARY) if kind == "pick" else [ALL, *LIBRARY])
+        # Saved order: prompt, seed and its control, then the style rows.
+        prompt, seed, control, rows = n["widgets_values"]
         assert control in ("fixed", "increment", "decrement", "randomize")
-        apply_style(LIBRARY, prompt, position, mode)
+        apply_styles(LIBRARY, prompt, rows, seed)  # every saved type and style still exists

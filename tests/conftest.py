@@ -25,14 +25,13 @@ io = types.SimpleNamespace(
     ComfyNode=object,
     Schema=Spec,
     NodeOutput=Spec,
-    ControlAfterGenerate=types.SimpleNamespace(fixed="fixed", increment="increment"),
     String=types.SimpleNamespace(Input=Spec, Output=Spec),
-    Combo=types.SimpleNamespace(Input=Spec),
     Int=types.SimpleNamespace(Input=Spec),
-    DynamicCombo=types.SimpleNamespace(Input=Spec, Option=Spec),
+    Custom=lambda io_type: types.SimpleNamespace(io_type=io_type, Input=Spec),
 )
 latest = types.ModuleType("comfy_api.latest")
 latest.io = io
+latest.ui = types.SimpleNamespace(PreviewText=Spec)
 sys.modules["comfy_api"] = types.ModuleType("comfy_api")
 sys.modules["comfy_api.latest"] = latest
 folder_paths = sys.modules["folder_paths"] = types.ModuleType("folder_paths")

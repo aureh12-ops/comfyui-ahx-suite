@@ -1,0 +1,17 @@
+[
+  {"name": "Warm amber", "text": "warm amber color grade, golden orange tones, honey-colored highlights"},
+  {"name": "Cool blue", "text": "cool blue color grade, cyan shadows, crisp bluish whites"},
+  {"name": "Teal and orange", "text": "teal and orange color grade, warm skin tones against cool teal shadows"},
+  {"name": "Pastel", "text": "soft pastel color palette, {mint|peach|lilac|baby blue} tints, low contrast"},
+  {"name": "Vibrant", "text": "vibrant saturated colors, bold rich hues, punchy contrast"},
+  {"name": "Muted", "text": "muted desaturated colors, soft subdued tones, low saturation"},
+  {"name": "Faded", "text": "faded washed-out colors, lifted milky blacks, soft low-contrast tones"},
+  {"name": "High contrast", "text": "high-contrast color, deep blacks, bright highlights, bold color accents"},
+  {"name": "Complementary", "text": "complementary color scheme, {red and green|blue and orange|purple and yellow} contrasting hues"},
+  {"name": "Earthy", "text": "earthy natural palette, browns, greens and ochre"},
+  {"name": "Neon", "text": "neon colors, glowing hot pink, electric blue and violet against black"},
+  {"name": "Monochrome", "text": "monochrome {blue|red|green|sepia} color palette"},
+  {"name": "Sepia", "text": "sepia toned, warm brown and cream tones, aged photo coloring"},
+  {"name": "Black and white", "text": "black and white, rich grayscale tones, {deep blacks and bright whites|soft silvery grays}"},
+  {"name": "Retro", "text": "retro {1970s|1980s|1990s} color palette"}
+]

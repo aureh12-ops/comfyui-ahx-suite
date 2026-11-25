@@ -1,0 +1,12 @@
+[
+  {"name": "Early spring", "text": "in early spring, first green buds on bare branches, patches of melting snow, {crocuses|snowdrops} pushing through, cool fresh air"},
+  {"name": "Spring", "text": "in spring, fresh green leaves, {cherry blossoms|wildflowers|apple blossoms}"},
+  {"name": "Early summer", "text": "in early summer, lush bright green foliage, {fields of poppies|blooming roses|tall green grass}, long sunny days, mild warm air"},
+  {"name": "High summer", "text": "in high summer, deep green trees, blazing sun, dry golden grass, buzzing insects, warm heavy air"},
+  {"name": "Late summer", "text": "in late summer, ripe wheat fields, sunflowers, dusty golden light, first dry leaves, warm hazy evenings"},
+  {"name": "Early autumn", "text": "in early autumn, first yellow leaves among the green, ripe apples, {misty mornings|clear crisp afternoons}, cooling air"},
+  {"name": "Autumn", "text": "in autumn, golden and red leaves"},
+  {"name": "Late autumn", "text": "in late autumn, nearly bare trees, brown fallen leaves on the ground, gray damp sky, cold wet air"},
+  {"name": "Winter", "text": "in winter, bare trees, cold pale light"},
+  {"name": "Deep winter", "text": "in deep winter, thick snow covering everything, icicles, frozen still landscape, {pale blue|steel gray} sky, breath freezing in the air"}
+]

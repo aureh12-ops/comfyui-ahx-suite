@@ -1,4 +1,4 @@
-"""Style library: one <group>.json file per group, a list of {"name", "text"} entries."""
+"""Style library: one <type>.json file per style type, a list of {"name", "text"} entries."""
 
 import json
 import logging
@@ -6,16 +6,19 @@ import os
 import random
 import re
 
-ALL = "(all)"
+# Row values of the style stack; web/style_stack.js uses the same strings.
+PROMPT = "(prompt)"
+RANDOM = "(random)"
+CYCLE = "(cycle)"
 # {a|b|c} in a style text picks one of the options.
 CHOICES = re.compile(r"\{([^{}]*)\}")
 
 
 def load_library(folder):
-    """Return {group: {style name: text}} from folder/<group>.json."""
+    """Return {type: {style name: text}} from folder/<type>.json."""
     library = {}
     for file in sorted(os.listdir(folder), key=str.lower):
-        group, ext = os.path.splitext(file)
+        kind, ext = os.path.splitext(file)
         if ext.lower() != ".json":
             continue
         try:
@@ -27,14 +30,8 @@ def load_library(folder):
             logging.warning(f"Prompt Style (ahx): skipped {file}: {e}")
             continue
         if styles:
-            library[group] = styles
+            library[kind] = styles
     return library
-
-
-def labels(library, group=ALL):
-    """'Group / Style' labels of one group, or of every group."""
-    groups = library if group == ALL else [group]
-    return [f"{g} / {name}" for g in groups for name in library[g]]
 
 
 def join(first, second):
@@ -45,18 +42,35 @@ def join(first, second):
     return first + (" " if first[-1] in ".,;:!?" else ", ") + second
 
 
-def apply_style(library, prompt, position, mode):
-    """Return (styled prompt, 'Group / Style' label) for the node's settings."""
-    kind = mode["mode"]
-    # One generator for both the style pick and its {a|b} choices, so they don't repeat in lockstep.
-    rng = random.Random(mode["index"] if kind == "cycle" else mode["seed"])
-    if kind == "pick":
-        label = mode["style"]
-    elif kind == "random":
-        label = rng.choice(labels(library, mode["group"]))
-    else:
-        choices = labels(library, mode["group"])
-        label = choices[mode["index"] % len(choices)]
-    group, name = label.split(" / ", 1)
-    style = CHOICES.sub(lambda m: rng.choice(m.group(1).split("|")).strip(), library[group][name])
-    return (join(style, prompt) if position == "before" else join(prompt, style)), label
+def pick(library, row, rng):
+    """Return ('Type / Style' label, text with its {a|b} choices made) for one style row."""
+    kind, name = row["type"], row["style"]
+    styles = library.get(kind)
+    if styles is None:
+        raise ValueError(f"Prompt Style (ahx): no style type '{kind}' in the library")
+    if name == RANDOM:
+        name = rng.choice(list(styles))
+    elif name == CYCLE:
+        name = list(styles)[row.get("index", 0) % len(styles)]
+    elif name not in styles:
+        raise ValueError(f"Prompt Style (ahx): no style '{name}' in '{kind}'")
+    text = CHOICES.sub(lambda m: rng.choice(m.group(1).split("|")).strip(), styles[name])
+    return f"{kind} / {name}", text
+
+
+def apply_styles(library, prompt, rows, seed):
+    """Return (styled prompt, style labels, style texts) for the stack rows, top to bottom."""
+    if not any(row["type"] == PROMPT for row in rows):
+        rows = [{"type": PROMPT}, *rows]
+    # One generator for every random pick and {a|b} choice, so they don't repeat in lockstep.
+    rng = random.Random(seed)
+    styled, labels, texts = "", [], []
+    for row in rows:
+        if row["type"] == PROMPT:
+            styled = join(styled, prompt)
+            continue
+        label, text = pick(library, row, rng)
+        styled = join(styled, text)
+        labels.append(label)
+        texts.append(text)
+    return styled, labels, texts

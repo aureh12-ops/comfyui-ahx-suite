@@ -1,0 +1,14 @@
+[
+  {"name": "Pre-dawn", "text": "before dawn, deep indigo sky, faint glow on the horizon, last stars fading, cold still air"},
+  {"name": "Dawn", "text": "at dawn, soft pale light, {pink|lavender|peach} glow along the horizon, thin morning mist, quiet stillness"},
+  {"name": "Sunrise", "text": "at sunrise, pink and orange sky, fresh morning light"},
+  {"name": "Morning", "text": "in the morning, clear fresh light, low sun casting long soft shadows, {dew on the grass|bright blue sky}"},
+  {"name": "Midday", "text": "at midday, sun high overhead, harsh bright light, short hard shadows, vivid colors"},
+  {"name": "Afternoon", "text": "in the afternoon, warm even sunlight, sun slowly lowering, lengthening shadows, hazy blue sky"},
+  {"name": "Golden hour", "text": "at golden hour, low warm sun, honey-colored light, long glowing shadows, soft rim light"},
+  {"name": "Sunset", "text": "at sunset, fiery orange sky, long shadows"},
+  {"name": "Blue hour", "text": "during the blue hour, deep cobalt twilight sky, glowing windows and street lights, cool soft shadowless light"},
+  {"name": "Dusk", "text": "at dusk, last light fading on the horizon, dim {purple|rose and gray} sky, darkening silhouettes, first stars appearing"},
+  {"name": "Night", "text": "at night, {moonlit|under a starry sky|lit by city lights}, deep blue darkness"},
+  {"name": "Midnight", "text": "at midnight, pitch-dark sky, {a full moon high above|a sky full of stars|a single glowing streetlight}, inky shadows, deep silence"}
+]

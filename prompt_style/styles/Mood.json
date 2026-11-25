@@ -1,0 +1,15 @@
+[
+  {"name": "Warm and cozy", "text": "warm cozy mood, snug and inviting, comforting atmosphere"},
+  {"name": "Calm and peaceful", "text": "calm serene mood, peaceful stillness, gentle unhurried atmosphere"},
+  {"name": "Joyful", "text": "joyful cheerful mood, lighthearted and carefree, sense of celebration"},
+  {"name": "Playful", "text": "playful whimsical mood, lighthearted fun, a hint of mischief"},
+  {"name": "Energetic", "text": "energetic lively mood, dynamic motion, bursting with life"},
+  {"name": "Dreamy", "text": "dreamy ethereal mood, soft glow, hazy light"},
+  {"name": "Nostalgic", "text": "nostalgic mood, bittersweet memories, sense of a time long gone"},
+  {"name": "Melancholic", "text": "melancholic mood, quiet stillness, wistful sense of loss"},
+  {"name": "Lonely", "text": "lonely isolated mood, quiet solitude, vast emptiness all around"},
+  {"name": "Mysterious", "text": "mysterious atmosphere, drifting fog, details hidden in shadow"},
+  {"name": "Tense", "text": "tense suspenseful atmosphere, uneasy stillness, something about to happen"},
+  {"name": "Dark and moody", "text": "dark moody atmosphere, deep shadows, heavy brooding air"},
+  {"name": "Epic", "text": "epic grand atmosphere, sweeping sense of scale, heroic and awe-inspiring"}
+]

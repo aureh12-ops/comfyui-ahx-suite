@@ -1,0 +1,14 @@
+[
+  {"name": "Rule of thirds", "text": "rule of thirds composition, subject placed off-center, balanced open space"},
+  {"name": "Centered symmetry", "text": "centered symmetrical composition, subject in the middle, perfectly balanced mirrored sides"},
+  {"name": "Leading lines", "text": "strong leading lines, {a winding road|a fence|railway tracks|a long corridor} drawing the eye to the subject"},
+  {"name": "Frame within a frame", "text": "frame within a frame, subject seen through {a doorway|a window|an archway|overhanging branches}"},
+  {"name": "Negative space", "text": "minimalist composition, large negative space, small subject in an empty expanse"},
+  {"name": "Diagonal", "text": "dynamic diagonal composition, strong lines crossing the frame corner to corner, sense of movement"},
+  {"name": "Fill the frame", "text": "tight close-up filling the entire frame, intricate detail, no empty space"},
+  {"name": "Layered depth", "text": "layered composition, {blurred foreground elements|framing foliage} in front, subject in the middle ground, distant background, strong sense of depth"},
+  {"name": "Reflection", "text": "reflection composition, subject mirrored in {a still lake|a rain puddle|a glass window|a polished floor}"},
+  {"name": "Silhouette", "text": "dark silhouette against a bright sky, strong simple outline, backlit shape"},
+  {"name": "Pattern and repetition", "text": "repeating patterns filling the frame, rhythm of similar shapes, one element breaking the pattern"},
+  {"name": "Low horizon", "text": "low horizon line, vast sky taking up most of the frame, small landscape below"}
+]

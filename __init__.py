@@ -8,4 +8,6 @@ if __package__:  # ComfyUI imports this folder as a package; pytest imports the 
         "AHX_PromptStyle": PromptStyle,
     }
 
-    __all__ = ["NODE_CLASS_MAPPINGS"]
+    WEB_DIRECTORY = "./web"
+
+    __all__ = ["NODE_CLASS_MAPPINGS", "WEB_DIRECTORY"]
