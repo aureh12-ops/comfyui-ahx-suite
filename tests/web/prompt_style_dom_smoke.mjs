@@ -135,6 +135,10 @@ try {
   } } } }));
   assert.deepEqual(await rows.nth(0).locator("select").first().locator("option").allTextContents(), ["Location", "Era", "Lighting"]);
   assert.equal((await hints())[0], '"Location" is not in the style library.');
+  assert.equal(await page.locator(".ahx-stack-missing").count(), 1);
+  await rows.nth(0).locator("select").first().selectOption("Era");
+  assert.equal(await page.locator(".ahx-stack-missing").count(), 0);
+  await page.evaluate(() => window.widget.value = [{ type: "Location", style: "Beach" }, { type: "(prompt)" }]);
 
   // Keys typed in a list stay out of ComfyUI's shortcuts.
   await rows.nth(0).locator("select").first().press("Delete");

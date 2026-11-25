@@ -33,6 +33,12 @@ export function moveRow(rows, i, delta) {
   return moved;
 }
 
+/** True when the row's type or style is no longer in the library: running would fail. */
+export function isMissing(library, row) {
+  const styles = library[row.type];
+  return !styles || (row.style !== RANDOM && row.style !== CYCLE && !styles.has(row.style));
+}
+
 /** What the row adds to the prompt, shown under it. */
 export function hint(library, row) {
   const styles = library[row.type];

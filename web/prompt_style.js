@@ -1,7 +1,7 @@
 // Prompt Style (ahx): the stack of style rows around the prompt, and the style text of the last run.
 
 import { app } from "../../scripts/app.js";
-import { CYCLE, PROMPT, RANDOM, changeType, hint, moveRow, newRow, stepCycles, toLibrary } from "./style_stack.js";
+import { CYCLE, PROMPT, RANDOM, changeType, hint, isMissing, moveRow, newRow, stepCycles, toLibrary } from "./style_stack.js";
 
 // Fixed heights, so the node knows its size before the rows are on screen.
 const LINE = 22; // buttons and lists
@@ -25,6 +25,7 @@ const CSS = `
 .ahx-stack button:disabled { opacity: 0.3; cursor: default; }
 .ahx-stack-hint { grid-column: 3 / 6; font-size: 11px; line-height: 14px; color: var(--descrip-text, #999);
   overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.ahx-stack-hint.ahx-stack-missing { color: var(--error-text, #ff6b6b); }
 .ahx-stack-label { grid-column: 3 / 6; box-sizing: border-box; line-height: ${LINE - 2}px; text-align: center;
   color: var(--descrip-text, #999); border: 1px dashed var(--border-color, #555); border-radius: 4px; }
 .ahx-stack-last { flex: 1; min-height: 0; overflow: auto; white-space: pre-wrap; padding: 4px 6px; box-sizing: border-box;
@@ -76,7 +77,7 @@ function addStyleStack(node, name, spec) {
         select(types, row.type, (type) => set(changeType(library, row, type))),
         select([RANDOM, CYCLE, ...(library[row.type]?.keys() ?? [])], row.style, (style) => set({ type: row.type, style })),
         button("×", "Remove", () => update(rows.filter((_, j) => j !== i), true)),
-        el("div", { className: "ahx-stack-hint", textContent: text, title: text }));
+        el("div", { className: `ahx-stack-hint${isMissing(library, row) ? " ahx-stack-missing" : ""}`, textContent: text, title: text }));
     }));
     add.disabled = !types.length;
   }

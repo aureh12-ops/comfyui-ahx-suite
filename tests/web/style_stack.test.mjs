@@ -1,7 +1,7 @@
 // node --test "tests/web/*.test.mjs"
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { CYCLE, PROMPT, RANDOM, changeType, hint, moveRow, newRow, stepCycles, toLibrary } from "../../web/style_stack.js";
+import { CYCLE, PROMPT, RANDOM, changeType, hint, isMissing, moveRow, newRow, stepCycles, toLibrary } from "../../web/style_stack.js";
 
 // Number-like names would come first in a plain JS object; pairs keep the file order.
 const library = toLibrary({
@@ -41,6 +41,15 @@ test("hint shows what the row adds", () => {
   assert.equal(hint(library, { type: "Era", style: CYCLE, index: 3 }), "Next run: 2/2 1900: 1900 photo");
   assert.equal(hint(library, { type: "Gone", style: "x" }), '"Gone" is not in the style library.');
   assert.equal(hint(library, { type: "Era", style: "Gone" }), '"Gone" is not in Era.');
+});
+
+test("isMissing flags rows whose type or style left the library", () => {
+  assert.equal(isMissing(library, { type: "Era", style: "1900" }), false);
+  assert.equal(isMissing(library, { type: "Era", style: RANDOM }), false);
+  assert.equal(isMissing(library, { type: "Era", style: CYCLE, index: 9 }), false);
+  assert.equal(isMissing(library, { type: "Camera angle", style: "Low angle" }), true);
+  assert.equal(isMissing(library, { type: "Camera angle", style: RANDOM }), true);
+  assert.equal(isMissing(library, { type: "Era", style: "Gone" }), true);
 });
 
 test("stepCycles moves only the cycle rows on", () => {

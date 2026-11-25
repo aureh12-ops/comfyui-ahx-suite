@@ -46,14 +46,16 @@ def pick(library, row, rng):
     """Return ('Type / Style' label, text with its {a|b} choices made) for one style row."""
     kind, name = row["type"], row["style"]
     styles = library.get(kind)
+    # Rows outlive style files: name the row to fix, since ComfyUI's popup only says the node failed.
     if styles is None:
-        raise ValueError(f"Prompt Style (ahx): no style type '{kind}' in the library")
+        raise ValueError(f"Prompt Style (ahx): the style type '{kind}' is not in your style library. "
+                         "Pick another type on that row.")
     if name == RANDOM:
         name = rng.choice(list(styles))
     elif name == CYCLE:
         name = list(styles)[row.get("index", 0) % len(styles)]
     elif name not in styles:
-        raise ValueError(f"Prompt Style (ahx): no style '{name}' in '{kind}'")
+        raise ValueError(f"Prompt Style (ahx): the style '{name}' is not in '{kind}'. Pick another style on that row.")
     text = CHOICES.sub(lambda m: rng.choice(m.group(1).split("|")).strip(), styles[name])
     return f"{kind} / {name}", text
 

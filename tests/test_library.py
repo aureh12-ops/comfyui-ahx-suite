@@ -93,8 +93,8 @@ def test_each_row_has_its_own_cycle():
 
 
 @pytest.mark.parametrize("bad, message", [
-    (row("Gone", "Film"), "no style type 'Gone'"),
-    (row("Look", "Gone"), "no style 'Gone' in 'Look'"),
+    (row("Gone", "Film"), "the style type 'Gone' is not in your style library. Pick another type on that row."),
+    (row("Look", "Gone"), "the style 'Gone' is not in 'Look'. Pick another style on that row."),
 ])
 def test_missing_styles_are_named_in_the_error(bad, message):
     with pytest.raises(ValueError, match=message):
