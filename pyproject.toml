@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-ahx-suite"
+description = "A suite of ComfyUI custom nodes."
+version = "0.1.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/aureh12-ops/comfyui-ahx-suite"
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyui-ahx-suite"
+Icon = ""
